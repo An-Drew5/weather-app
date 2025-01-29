@@ -1,4 +1,5 @@
-const apiKey = '7cd3b22416374373657ad74e3e887592';
+require ('dotenv').config();
+const apiKey = process.env.API_KEY;
 
 async function getWeather() {
     const cityInput = document.getElementById('cityInput').value;
